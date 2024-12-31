@@ -1,17 +1,29 @@
-# Hello World - Java Template
+# Hello World (Java)
 
-## Instructions
+You can find the instructions for this lab [here](https://morethanequations.com/Computer-Science/Labs/hello-world). We will use [Gradle](https://gradle.org/) to automate common development tasks.
 
-You can find the instructions for this lab [here](https://cyrusvandrevala.com/teaching/csc/214/labs/hello-world.html).
+## Building the App
 
-You only need to update `src/main/java/com/csc/HelloWorld.java` with your implementation (other files can remain untouched).
+You can build the app using:
 
-## Testing
+```bash
+./gradlew build
+```
 
-In this lab, you only need to update `src/main/java/com/csc/HelloWorld.java` with your implementation. The other files build the project, run automated tests, etc.
+## Testing the App
 
-You are welcome to run the automated tests for this project to check to make sure everything works beforehand. In order to do this, perform the following steps.
+You can run the automated suite of tests using:
 
-1. Install the [Gradle](https://gradle.org/install/) build tool.
-2. From the root of the project, type `gradle` into the command line. This will set up and build the project.
-3. From the root of the project, type `gradle test` into the command line. This will run all of the automated tests.
+```bash
+./gradlew test
+```
+
+## Running the App
+
+You can run the app using:
+
+```bash
+./gradlew run --quiet --console=plain
+```
+
+The two flags passed to the `run` command hide the noisy output from Gradle. You can see the details from Gradle by omitting those flags.
