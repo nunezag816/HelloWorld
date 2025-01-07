@@ -3,10 +3,10 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AppTest {
+class HelloWorldTest {
   @Test
   void itHasAGreeting() {
-    App helloWorld = new App();
+    HelloWorld helloWorld = new HelloWorld();
     assertNotNull(helloWorld.getGreeting());
   }
 }
