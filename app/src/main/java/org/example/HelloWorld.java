@@ -1,5 +1,7 @@
 package org.example;
 
 public class HelloWorld {
-  // Your code goes here
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
 }
